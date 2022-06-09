@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Contact channels with Marta MX" /><!-- SEO -->
+    <title>Marta Guzmán - Front End Developer</title>
+      
+      <!-- Google Fonts Links (3) First (2) links connect to Google Fonts API Then link to the specified font-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Righteous&display=swap" rel="stylesheet">
+      
+      <!-- Bootstrap -->
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS -->  
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/a203743493.js"
+      crossorigin="anonymous"
+    ></script>
+
+  </head>
+  
+  <body>
+
+    <!-- Navigation Bar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light " id="menu">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#showcase" id="home">HOME</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav menu-options">
+            <a class="nav-link menu-options" id="menu-option-a" href="#portfolio">PORTFOLIO</a>
+            <a class="nav-link menu-options" id="menu-option-b" href="#skills">SKILLS</a>
+            <a class="nav-link menu-options" id="menu-option-c" href="#certifications">CERTIFICATIONS</a>
+            <a class="nav-link menu-options" id="menu-option-d" href="#about">ABOUT</a>
+            <a class="nav-link menu-options" id="menu-option-e" href="#contact">CONTACT</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- COVER-LANDING-->
+    <section class="showcase" id="showcase">
+      <video src="src/production ID_4377860.mp4" muted loop autoplay></video>
+      <div class="overlay"></div><!--directly-closed-->
+      <div class="text">
+        <h2>MARTA GUZMAN</h2> 
+        <h3>FULL STACK DEVELOPMENT </h3>
+        <p>Scientific understanding <br>and a creative mind</p>
+        
+      </div> <!--text-->
+      <ul class="social">
+        <li><a href="https://github.com/MartaMX" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a></li>
+        
+        
+      </ul>
+    </section>
+
+    <!-- Test Fullscreen section-->
+    <section class="fwh-slide">
+      <p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laudantium, reiciendis vitae ea harum aliquid consequuntur? Veniam, iure! Velit, cumque! Animi, eos sit vel vero temporibus perferendis ad blanditiis error?
+      </p>
+    </section><!-- fwh-slide-->
+
+    <!--  PORTFOLIO -->
+    <div class="portfolio" id="portfolio">
+      <div class="block portfolio-text">
+        <h2 class="title-1" id="portfolio">Portfolio</h2>
+      
+        <table>
+            <thead>
+              <tr>
+                 <th></th>
+                 <th></th>
+                 <th></th>
+              </tr>
+            </thead>
+          
+          <tbody>
+            <tr>
+               <td class="projects">Dictionary</td><!-- a -->
+               <td class="descriptions">Retrieve real time weather condidions and forecast in over 200,000 locations around the world.
+                  </br><a href="https://second-react-dictionary.netlify.app/" target="_blank" class="site">Site</a>
+                  <a href="https://github.com/MartaMX/second-react-dictionary" target="_blank" class="code">Code</a>
+               </td>
+              <td>React, API, HTML, CSS, Bootstrap in VSC</td>
+            </tr>
+            
+            <tr>
+              <td class="projects">Weather Forecast</td><!-- b -->
+              <td class="descriptions">Obtain definitions, grammar, synonims, and example images.
+HTML, CSS, JavaScript, React, APIs, and hardwork.
+                  </br><a href="https://app.netlify.com/sites/jsweatherforecast" target="_blank" class="site">Site</a>
+                  <a href="https://github.com/MartaMX/My-Weather-App" target="_blank" class="code">Code</a>
+                </td>
+              <td>React, API, HTML, CSS, Bootstrap in VSC</td>
+            </tr>
+            
+            <tr>
+              <td class="projects">Portfolio website</td><!-- c -->
+              <td class="descriptions">This website.
+                </br>
+                <a href="https://github.com/MartaMX/22-5-portfolio-1" target="_blank" class="code">Code</a>
+              </td>
+              <td>HTML, CSS, Bootstrap in VSC</td>
+            </tr>
+            
+            <tr>
+              <td class="projects">Musical Band</td><!-- d -->
+              <td class="descriptions">Entry project for a program. As per requireements, it is developed in a contained environment, with only HTML and CSS (no bootstrap allowed).
+                </br><a href="https://codepen.io/marta-gc/pen/XWZmyRw?editors=1100" target="_blank" class="site">Site</a>
+                <a href="https://codepen.io/marta-gc/pen/XWZmyRw?editors=1100" target="_blank" class="code">Code</a>
+              </td>
+              <td>HTML,CSS in CodePen environment</td>
+            </tr>
+            
+          </tbody>
+          
+        </table>
+        </div> <!-- block-->
+    </div> <!-- hero portfolio-->
+
+    <!-- SKILLS -->
+    <div class="skills" id="skills">
+    <div class="block skills-text">
+        <h2 class="title-2" >Skills</h2>
+        
+        <!-- table -->
+        <table>
+            <thead>
+            </thead>
+          
+          <tbody>
+            <tr>
+              <td class="skill-name">Bringing people together</td>
+              <td class="skill-description">I’m skilled at building bridges between multidisciplinary teams: architects, developers, economists, actuaries, psychologists, designers, financial, scientists - to name a few.</td> 
+            </tr>
+            <tr>
+              <td class="skill-name">Smart (and savvy)</td>
+              <td class="skill-description">I’ve built up the spatial, mathematical and scientific skills to tackle and advocate successfully for complex product requirements. But perhaps most importantly, I can understand and navigate my way through business processes, financial considerations, regulatory compliance, reporting - and, of course - monitoring and meeting strategic KPIs.</td>
+            </tr>
+            <tr>
+              <td class="skill-name">Visually creative</td>
+              <td class="skill-description">I like to create impactful visual schemes of abstract concepts to foster collaboration between teams and provide a roadmap of sorts that everyone can get excited about. </td>
+            </tr>
+            <tr>
+              <td class="skill-name">Thoughtfully precise</td>
+              <td class="skill-description">I’m proactive and analytical. Regardless of the challenge, I seek to deliver not just a final product of the highest quality, but also observations and questions along the way so we can find the right balance between form and function - and always ensure we’re building thoughtfully and responsibly.</td>
+            </tr>
+            
+          </tbody>
+          
+        </table>
+        </div>
+    </div> <!-- hero -->
+
+    <!-- CERTIFICATIONS -->
+    <div class="certifications" id="certifications">
+      <div class="block certifications-text">
+        <h2 class="title-1" id="certifications">Certifications</h2>
+        
+        <p>
+          <strong>Cloud:</strong> Microsoft Azure Fundamentals, Microsoft Azure AI<br>
+<strong>Front end:</strong> HTML, CSS, Javascript, REACT<br>
+<strong>Back end:</strong> VisualBasic<br>
+<strong>Software development:</strong> Agile processes, mobile applications, Github
+        </p>
+        </div>
+    </div> <!-- hero -->
+
+  
+    <!-- ABOUT -->
+    <div class="about" id="about">
+      <div class="block about-text">
+        <h2 class="title-2" >About</h2>
+        
+        <p>Originally hailing from Mexico City, I’m on the road to becoming a citizen of the world, pursuing educational, professional and personal adventures far from home. No matter where I may roam, I want to contribute to making the world a better place.<br>
+
+At my core, I’m a blend of the logical and the creative, a rare combination that I hope provides me the right perspective to bridge distances between the big, abstract ideas behind information technology and the everyday wants and needs of the concrete world.<br>
+
+In my home country, I began my career as an IT business consultant. Serving multiple sectors helped me strengthen my skills and build a solid foundation for work. From there, curiosity and a passion for learning led me to explore cloud and programming certifications so I could better understand - and be better able to bring my own creativity - into highly technical environments. 
+</p>
+        </div>
+    </div> <!-- about -->
+
+    <!-- CONTACT 1 -->
+    <div class="contact" id="contact">
+      <section class="block contact-text"> 
+        <h2 class="title" id="contact">Contact</h2>
+        <p>Let's have a thorough analysis of your project's implementation.</br> Reach out so we can discuss further about joining forces.</br>
+Always open to new projects, challenges and coding learning!</p>
+        <ul class="social">
+          <li><a href="https://github.com/MartaMX" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a></li>
+          <li><a class="socials"
+              href="https://www.linkedin.com/in/martaguzmancabrera/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i ></a></li>
+        </ul>
+      </section><!-- block contact-text-->
+       
+
+
+    </div> <!-- hero contact-->
+    
+    <!-- CONTACT 2 -->
+      <div class="hero message-background">
+      <!-- Adjust when hosting: action (in form),and  _next (in input) -->
+      <form action="https://formsubmit.co/info@martaguzman.com" method="POST">
+        <input type="hidden" name="_subject" value="New submission!" />
+        <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
+        <div class="contact-row">
+          <div class="input-group">
+            <input type="text" id="name" required />
+            <label for="name"><i class="fas fa-user"></i> Your Name</label>
+          </div>
+          <div class="input-group">
+            <input type="text" id="email" required />
+            <label for="email"
+              ><i class="fas fa-envelope"></i> Your Email</label
+            >
+          </div>
+        </div>
+
+        <div class="input-group">
+          <textarea id="message" rows="8" required></textarea>
+          <label for="message"
+            ><i class="fas fa-comments"></i> Your Message</label
+          >
+        </div>
+
+        <button type="submit">SUBMIT <i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div> <!-- hero -->
+      
+
+       
+    <!-- Bootstrap: -->
+     <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"
+      ></script>
+  </body>
+</html>

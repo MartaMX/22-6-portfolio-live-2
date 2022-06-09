@@ -1,0 +1,438 @@
+  /**ALL SECTIONS**/
+  :root {
+  --primary-color: #000b6e;
+  --secondary-color:#82cdff ; /*#6a9ac7*/
+  --background-color: #e9e8e8;
+  --soft-background: #edf7fa;
+  --soft-text: #6a9ac7;
+  --link-hover: #30d4f1;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --main-title-font:'Poppins', sans-serif;
+  --subtitles-font:'Righteous', cursive;
+  --titles-font:'Poppins', sans-serif;
+  --body-font:sans-serif;
+}
+
+/** Backgrounds **/
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.portfolio, .certifications, .contact{
+  background: var(--soft-background);
+}
+.title-1{
+  color:  var(--primary-color);
+}
+
+
+.skills, .about{
+  background: var(--secondary-color);
+}
+.title-2{
+  color:  white;
+}
+
+.block{
+  color:  var(--soft-text);
+}
+
+.hero{
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/** Navigation Bar **/
+#home,
+#menu-option-a, 
+#menu-option-b, 
+#menu-option-c, 
+#menu-option-d, 
+#menu-option-e{
+  color:  var(--soft-text);
+  transition: 00.2s;
+}
+
+#home:hover,
+#menu-option-a:hover, 
+#menu-option-b:hover, 
+#menu-option-c:hover, 
+#menu-option-d:hover, 
+#menu-option-e:hover{
+  color:  var(--link-hover);
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+#menu{
+  margin-top: 15px;
+}
+
+/** COVER-LANDING **/
+.showcase header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.showcase
+{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+
+.showcase video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.showcase .overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #03a9f4;
+  mix-blend-mode: overlay;
+}
+.showcase .text
+{
+  position: relative;
+  z-index: 10;
+}
+
+.showcase .text h2
+{
+  font-size: 5em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.showcase .text h3
+{
+  font-size: 4em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.showcase .text p
+{
+  font-size: 1.1em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+.showcase .text a
+{
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+.showcase .text a:hover
+{
+  letter-spacing: 6px;
+}
+.showcase .social
+{
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.showcase .social li
+{
+  list-style: none;
+}
+.showcase .social li a
+{
+  display: inline-block;
+  margin-right: 20px;
+  color:white;
+  font-size: 3em;
+  transition: 0.5s;
+}
+.showcase .social li a:hover
+{
+  transform: scale(0.5) translateY(-15px);
+}
+
+/** Responsiveness **/
+
+@media (max-width: 991px)
+{
+  .showcase,
+  .showcase header
+  {
+    padding: 40px;
+  }
+  .text h2
+  {
+    font-size: 3em;
+  }
+  .text h3
+  {
+    font-size: 1em;
+  }
+}
+/** end-Responsiveness **/
+
+/**Fullscreen Section**/
+.fwh-slide{
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: red;
+  box-sizing: border-box;
+  clear: inherit;
+}
+/**end-Fullscreen Section**/
+
+/** PORTFOLIO Section **/
+.portfolio{
+  height: 120vh;
+}
+.portfolio-text{
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  padding: 50px 100px;
+  padding-top: 150px;
+}
+
+.projects{
+  font-size: 1.3em;
+  font-weight: bolder;
+  color:  var(--primary-color);
+}
+
+.descriptions{
+  margin-bottom: 30px;
+  
+}
+
+td{
+  align-items: top;
+}
+
+tr{
+  height: 30px;
+}
+
+
+.site, .code{
+  color:  var(--link-hover);
+  transition: 00.2s;
+  text-decoration: none;
+}
+
+.site:hover, .code:hover{
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+/**SKILLS Section**/
+.skills{
+  height: 130vh;
+}
+.skills-text{
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 100px;
+  max-width: 1000px;
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+.skill-name{
+  color: white;
+  font-weight: bold;
+}
+
+/**CERTIFICATIONS Section**/
+.certifications strong{
+  font-weight: bolder;
+  color:  var(--primary-color);
+  font-size: 1.2em;
+}
+.certifications{
+  height: 100vh;
+}
+.certifications-text{
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 100px;
+  max-width: 1000px;
+  padding-top: 180px;
+}
+
+/** ABOUT Section **/
+.about{
+  height: 120vh;
+}
+.about-text{
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  padding: 50px 100px;
+  padding-top: 150px;
+}
+
+/** CONTACT 1 **/
+.contact {
+  background-color: rgb(52, 56, 78);
+  width: 100%;
+}
+.contact-text{
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 100px;
+  max-width: 1000px;
+  color: white;
+}
+
+.contact-text .social
+{
+  display: flex;
+  justify-content: center;  
+}
+.contact-text .social li
+{
+  list-style: none;
+  
+}
+.contact-text .social li a
+{
+  display: inline-block;
+  margin-right: 20px;
+  transition: 0.5s;
+  color: white;
+  font-size: 30px;
+}
+.contact-text .social li a:hover
+{
+  transform: scale(0.9) translateY(-15px);
+}
+
+/** CONTACT 2 Section **/
+.message-background{
+  background-image: linear-gradient(rgba(0,0,0,0.05), #6a9ac7), url(shahadat-rahman-BfrQnKBulYQ-unsplash.jpg);
+}
+form{
+  width: 90%;
+  max-width: 600px;
+}
+.input-group{
+  margin-bottom: 30px;
+  position: relative;
+}
+input,textarea{
+  width: 100%;
+  padding: 10px;
+  outline:0;
+  border: 1px solid #ffff;
+  color: #ffff;
+  background: transparent;
+  font-size:15px;
+}
+label{
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  color: #ffff;
+  cursor: text;
+  transition: 0.2s;
+}
+button{
+  padding: 10px 0;
+  color: #ffff;
+  outline: none;
+  background: transparent;
+  border: 1px solid #ffff;
+  width: 100%;
+  cursor: pointer;
+}
+
+/** the following should be read as:
+When the INPUT is on (:) FOCUS, target (~) LABEL to do these changes **/
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+  top: -35px;
+  font-size: 14px;
+/** for the VALID  one to work  you must
+ change the corresponding field  to "required" in the HTML tag **/
+}
+
+.contact-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-row .input-group{
+  flex-basis: 48%;
+}
+/** end CONTACT FORM Section**/
+
+#contact-title{
+  display: block;
+  clear: both;
+}
